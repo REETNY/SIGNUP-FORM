@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AJIDE SHAMSIDEEN">
+    <meta name="description" content="sign up form">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://use.fontawesome.com/7e50d7d663.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+    
+
+    <section class="main-content">
+
+        <div class="first-section">
+            <div class="form-head">Hello!</div>
+            <div class="form-lead">Please signup to continue.</div>
+
+            <form class="main-form" action="" method="get">
+
+                <labeL for="name" class="name">Full Name</labeL>
+                <input type="text" id="name" placeholder="John Doe" required>
+
+                <labeL for="email" class="name">Email Address</labeL>
+                <input type="email" id="email" placeholder="Johndoe@gmail.com" required>
+
+                <labeL for="password" class="name">Password</labeL>
+                <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
+
+                <labeL for="confirm_password" class="name">Confirm Password</labeL>
+                <input type="password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm Password" required>
+
+                <button type="submit" class="sign-up">Sign Up</button>
+            </form>
+
+            <div class="or">OR</div>
+
+            <div class="socials">
+                <div class="social-head">Signup with</div>
+                <div class="social-icon">
+                    <div class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+
+            <div class="already-mem">I'm already a member! <a href="signin.html" target="_self">Sign In</a></div>
+        </div>
+
+        <div class="second-section">
+            <div class="content-sign">
+                <div class="ball"><i class="fa fa-futbol-o" aria-hidden="true"></i></div>
+                <div class="ball-head">Soccer Ball</div>
+                <div class="ball-lead">Already have an account?</div>
+                <a class="btn" href="index.html">Sign In</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
